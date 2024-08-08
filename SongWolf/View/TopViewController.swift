@@ -7,7 +7,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class TopViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -30,6 +30,8 @@ class ViewController: UIViewController {
         startButton.translatesAutoresizingMaskIntoConstraints = false
         view.addSubview(startButton)
         
+        startButton.addTarget(self, action: #selector(startButtonTapped), for: .touchUpInside)
+        
         // 制約を追加
         NSLayoutConstraint.activate([
             // タイトルラベルの中央揃え
@@ -40,6 +42,13 @@ class ViewController: UIViewController {
             startButton.centerXAnchor.constraint(equalTo: view.centerXAnchor),
             startButton.topAnchor.constraint(equalTo: titleLabel.bottomAnchor, constant: 20)
         ])
+        
+    }
+    
+    @objc private func startButtonTapped() {
+        let selectSongsVC = SelectSongsViewController()
+        selectSongsVC.modalPresentationStyle = .fullScreen
+        present(selectSongsVC, animated: true, completion: nil)
     }
 }
 
