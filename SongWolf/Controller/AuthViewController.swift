@@ -26,11 +26,13 @@ final class AuthViewController {
                 print(error.localizedDescription)
             }
             guard let _accessToken = accessToken else {
+                print("惜しいぜ、もう少しだ！！")
                 return
             }
         // キーを保持
         UserDefaults.standard.set(_accessToken.access_token, forKey: "SpotifyAccessToken")//_accessToken.access_tokenであってるかがわからない
         }
+        print("トークン取得完了")
         return true
     }
 }

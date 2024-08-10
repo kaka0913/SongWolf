@@ -20,8 +20,10 @@ final class SpotifyAPI {
     let getTokenEndPoint = "https://accounts.spotify.com/api/token"
 
     let scopes = "user-read-private%20playlist-read-private%20playlist-read-collaborative"
-    let redirectURI = "https://songwolf/callback"
-    let stateStr = "stateを入力"
+    let redirectURI = "songwolf://"
+    let stateStr: String = {
+        return UUID().uuidString
+    }()
     let grantType = "authorization_code"
 
     enum  URLParameterName: String {
