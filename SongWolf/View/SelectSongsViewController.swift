@@ -20,6 +20,35 @@ class SelectSongsViewController: UIViewController {
         view.backgroundColor = .white
         setupLabel()
         setupPlayerList()
+        setupButton()
+    }
+
+    private func setupButton() {
+        var button = UIButton(type: .system) {
+            didSet {
+                button.addTarget(self, action: #selector(buttonTapped), for: .touchUpInside)
+            }
+        }
+        
+        button.setTitle("Select Songs", for: .normal)
+        button.backgroundColor = .systemBlue
+        button.setTitleColor(.white, for: .normal)
+        button.layer.cornerRadius = 10
+        button.translatesAutoresizingMaskIntoConstraints = false
+        button.addTarget(self, action: #selector(buttonTapped), for: .touchUpInside)
+        
+        view.addSubview(button)
+
+        NSLayoutConstraint.activate([
+            button.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor, constant: -20),
+            button.centerXAnchor.constraint(equalTo: view.centerXAnchor),
+            button.widthAnchor.constraint(equalToConstant: 200),
+            button.heightAnchor.constraint(equalToConstant: 50)
+        ])
+    }
+    
+    @objc private func buttonTapped() {
+        UIApplication.shared.open(SpotifyAPI.shared.oAuthURL, options: [:])
     }
     
     private func setupLabel() {
