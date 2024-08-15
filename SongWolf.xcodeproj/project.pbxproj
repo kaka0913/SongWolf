@@ -12,7 +12,6 @@
 		224542E42C672E4A000B5BF6 /* AuthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 224542E32C672E4A000B5BF6 /* AuthViewController.swift */; };
 		224542E62C673A11000B5BF6 /* SpotifyAccessTokenModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 224542E52C673A11000B5BF6 /* SpotifyAccessTokenModel.swift */; };
 		224542E92C673E5A000B5BF6 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 224542E82C673E5A000B5BF6 /* Alamofire */; };
-		224542EB2C673E5A000B5BF6 /* AlamofireDynamic in Frameworks */ = {isa = PBXBuildFile; productRef = 224542EA2C673E5A000B5BF6 /* AlamofireDynamic */; };
 		226D81B22C628F7800B2026B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 226D81B12C628F7800B2026B /* AppDelegate.swift */; };
 		226D81B42C628F7800B2026B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 226D81B32C628F7800B2026B /* SceneDelegate.swift */; };
 		226D81BB2C628F7A00B2026B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 226D81BA2C628F7A00B2026B /* Assets.xcassets */; };
@@ -42,7 +41,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				224542E92C673E5A000B5BF6 /* Alamofire in Frameworks */,
-				224542EB2C673E5A000B5BF6 /* AlamofireDynamic in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -141,7 +139,6 @@
 			name = SongWolf;
 			packageProductDependencies = (
 				224542E82C673E5A000B5BF6 /* Alamofire */,
-				224542EA2C673E5A000B5BF6 /* AlamofireDynamic */,
 			);
 			productName = SongWolf;
 			productReference = 226D81AE2C628F7800B2026B /* SongWolf.app */;
@@ -358,6 +355,7 @@
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -385,6 +383,7 @@
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -437,11 +436,6 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 224542E72C673E5A000B5BF6 /* XCRemoteSwiftPackageReference "Alamofire" */;
 			productName = Alamofire;
-		};
-		224542EA2C673E5A000B5BF6 /* AlamofireDynamic */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 224542E72C673E5A000B5BF6 /* XCRemoteSwiftPackageReference "Alamofire" */;
-			productName = AlamofireDynamic;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
