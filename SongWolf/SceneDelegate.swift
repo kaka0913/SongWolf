@@ -24,6 +24,13 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         window?.rootViewController = TopViewController()
         window?.makeKeyAndVisible()
     }
+    
+    //外部サイトからアプリを再度立ち上げることになるので立ち上げ後の処理を記述する
+    func scene(_ scene: UIScene, openURLContexts URLContexts: Set<UIOpenURLContext>) {
+        guard let url = URLContexts.first?.url else { return }
+        print("SceneDelegateでアプリに戻ってきました。URL: \(url)")
+        AuthViewController.shared.openURL(url: url)
+    }
 
     func sceneDidDisconnect(_ scene: UIScene) {
         // Called as the scene is being released by the system.

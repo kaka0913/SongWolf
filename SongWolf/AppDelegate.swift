@@ -31,10 +31,5 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Use this method to release any resources that were specific to the discarded scenes, as they will not return.
     }
     
-    //外部サイトからアプリを再度立ち上げることになるので立ち上げ後の処理を記述する
-    func application(_ app: UIApplication, open url: URL, options: [UIApplication.OpenURLOptionsKey : Any] = [:]) -> Bool {
-        return AuthViewController.shared.openURL(url: url)
-    }
-
 }
 
