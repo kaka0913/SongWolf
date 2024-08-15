@@ -13,13 +13,6 @@ final class SpotifyAPI {
     static let shared = SpotifyAPI()
     private init() {}
 
-    let clientID = "142403b775e745b0bce107688ce0c15c"
-    let clientSecret = "4a3168d451814b2e918bbd97f119a1f0"
-    let baseOAuthURL = "https://accounts.spotify.com/authorize"
-    let baseAPIURL = "https://api.spotify.com/v1"
-    let getTokenEndPoint = "https://accounts.spotify.com/api/token"
-
-    let scopes = "user-read-private%20playlist-read-private%20playlist-read-collaborative"
     let redirectURI = "songwolf://"
     let stateStr: String = {
         return UUID().uuidString
