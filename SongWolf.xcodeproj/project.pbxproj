@@ -16,6 +16,9 @@
 		226D81B42C628F7800B2026B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 226D81B32C628F7800B2026B /* SceneDelegate.swift */; };
 		226D81BB2C628F7A00B2026B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 226D81BA2C628F7A00B2026B /* Assets.xcassets */; };
 		226D81BE2C628F7A00B2026B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 226D81BC2C628F7A00B2026B /* LaunchScreen.storyboard */; };
+		229A1A792C6E4A8D0039F740 /* SearchResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 229A1A782C6E4A8D0039F740 /* SearchResponse.swift */; };
+		229A1A7B2C6E4B950039F740 /* SearchSongViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 229A1A7A2C6E4B950039F740 /* SearchSongViewController.swift */; };
+		229A1A7E2C6F86620039F740 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 229A1A7D2C6F86620039F740 /* .gitignore */; };
 		22D3245D2C64AAB600373458 /* TopViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22D3245C2C64AAB600373458 /* TopViewController.swift */; };
 		22D324602C64AB0E00373458 /* SelectSongsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22D3245F2C64AB0E00373458 /* SelectSongsViewController.swift */; };
 /* End PBXBuildFile section */
@@ -31,6 +34,10 @@
 		226D81BA2C628F7A00B2026B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		226D81BD2C628F7A00B2026B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		226D81BF2C628F7A00B2026B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		229A1A782C6E4A8D0039F740 /* SearchResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResponse.swift; sourceTree = "<group>"; };
+		229A1A7A2C6E4B950039F740 /* SearchSongViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchSongViewController.swift; sourceTree = "<group>"; };
+		229A1A7C2C6F825E0039F740 /* Config.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Config.xcconfig; sourceTree = "<group>"; };
+		229A1A7D2C6F86620039F740 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 		22D3245C2C64AAB600373458 /* TopViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TopViewController.swift; sourceTree = "<group>"; };
 		22D3245F2C64AB0E00373458 /* SelectSongsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectSongsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -92,6 +99,8 @@
 				226D81BA2C628F7A00B2026B /* Assets.xcassets */,
 				226D81BC2C628F7A00B2026B /* LaunchScreen.storyboard */,
 				226D81BF2C628F7A00B2026B /* Info.plist */,
+				229A1A7C2C6F825E0039F740 /* Config.xcconfig */,
+				229A1A7D2C6F86620039F740 /* .gitignore */,
 			);
 			path = SongWolf;
 			sourceTree = "<group>";
@@ -100,6 +109,7 @@
 			isa = PBXGroup;
 			children = (
 				224542E52C673A11000B5BF6 /* SpotifyAccessTokenModel.swift */,
+				229A1A782C6E4A8D0039F740 /* SearchResponse.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -107,6 +117,7 @@
 		22D3245B2C64AAB600373458 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				229A1A7A2C6E4B950039F740 /* SearchSongViewController.swift */,
 				22D3245C2C64AAB600373458 /* TopViewController.swift */,
 				22D3245F2C64AB0E00373458 /* SelectSongsViewController.swift */,
 			);
@@ -186,6 +197,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				226D81BE2C628F7A00B2026B /* LaunchScreen.storyboard in Resources */,
+				229A1A7E2C6F86620039F740 /* .gitignore in Resources */,
 				226D81BB2C628F7A00B2026B /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -203,8 +215,10 @@
 				226D81B42C628F7800B2026B /* SceneDelegate.swift in Sources */,
 				224542E42C672E4A000B5BF6 /* AuthViewController.swift in Sources */,
 				224542E22C671E3D000B5BF6 /* SpotifyAPI.swift in Sources */,
+				229A1A792C6E4A8D0039F740 /* SearchResponse.swift in Sources */,
 				224542DD2C671A4C000B5BF6 /* APIError.swift in Sources */,
 				22D324602C64AB0E00373458 /* SelectSongsViewController.swift in Sources */,
+				229A1A7B2C6E4B950039F740 /* SearchSongViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

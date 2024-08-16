@@ -26,6 +26,8 @@ DerivedData/
 timeline.xctimeline
 playground.xcworkspace
 
+Config.xcconfig
+
 .build/
 
 Pods/
@@ -41,5 +43,6 @@ fastlane/screenshots/**/*.png
 fastlane/test_output
 
 iOSInjectionProject/
+
 
 .vscode/
