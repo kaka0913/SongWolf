@@ -169,7 +169,8 @@ class SelectSongsViewController: UIViewController {
     }
     
     @objc private func selectSongButtonTapped(sender: UIButton) {
-        // Implement the logic to select a song
-        print("Select song button tapped")
+        let searchSongVC = SearchSongViewController()
+        searchSongVC.modalPresentationStyle = .fullScreen
+        present(searchSongVC, animated: true, completion: nil)
     }
 }
