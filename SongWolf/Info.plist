@@ -4,10 +4,10 @@
 <dict>
 	<key>APIKeys</key>
 	<dict>
-		<key>SPOTIFY_API_ID</key>
-		<string>${SPOTIFY_API_ID}</string>
 		<key>SPOTIFY_API_SECRET</key>
 		<string>${SPOTIFY_API_SECRET}</string>
+		<key>SPOTIFY_API_ID</key>
+		<string>${SPOTIFY_API_ID}</string>
 	</dict>
 	<key>CFBundleURLTypes</key>
 	<array>

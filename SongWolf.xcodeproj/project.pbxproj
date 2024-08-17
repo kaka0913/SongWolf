@@ -19,6 +19,7 @@
 		229A1A792C6E4A8D0039F740 /* SearchResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 229A1A782C6E4A8D0039F740 /* SearchResponse.swift */; };
 		229A1A7B2C6E4B950039F740 /* SearchSongViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 229A1A7A2C6E4B950039F740 /* SearchSongViewController.swift */; };
 		229A1A7E2C6F86620039F740 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 229A1A7D2C6F86620039F740 /* .gitignore */; };
+		229A1A812C6F8B3D0039F740 /* APIKeyManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 229A1A802C6F8B3D0039F740 /* APIKeyManager.swift */; };
 		22D3245D2C64AAB600373458 /* TopViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22D3245C2C64AAB600373458 /* TopViewController.swift */; };
 		22D324602C64AB0E00373458 /* SelectSongsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22D3245F2C64AB0E00373458 /* SelectSongsViewController.swift */; };
 /* End PBXBuildFile section */
@@ -38,6 +39,7 @@
 		229A1A7A2C6E4B950039F740 /* SearchSongViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchSongViewController.swift; sourceTree = "<group>"; };
 		229A1A7C2C6F825E0039F740 /* Config.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Config.xcconfig; sourceTree = "<group>"; };
 		229A1A7D2C6F86620039F740 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		229A1A802C6F8B3D0039F740 /* APIKeyManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIKeyManager.swift; sourceTree = "<group>"; };
 		22D3245C2C64AAB600373458 /* TopViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TopViewController.swift; sourceTree = "<group>"; };
 		22D3245F2C64AB0E00373458 /* SelectSongsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectSongsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -90,6 +92,7 @@
 		226D81B02C628F7800B2026B /* SongWolf */ = {
 			isa = PBXGroup;
 			children = (
+				229A1A7F2C6F8B200039F740 /* Helpers */,
 				224542DE2C671E10000B5BF6 /* Service */,
 				22D3245A2C64AAAD00373458 /* Model */,
 				22D3245E2C64AABD00373458 /* Controller */,
@@ -103,6 +106,14 @@
 				229A1A7D2C6F86620039F740 /* .gitignore */,
 			);
 			path = SongWolf;
+			sourceTree = "<group>";
+		};
+		229A1A7F2C6F8B200039F740 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				229A1A802C6F8B3D0039F740 /* APIKeyManager.swift */,
+			);
+			path = Helpers;
 			sourceTree = "<group>";
 		};
 		22D3245A2C64AAAD00373458 /* Model */ = {
@@ -210,6 +221,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				22D3245D2C64AAB600373458 /* TopViewController.swift in Sources */,
+				229A1A812C6F8B3D0039F740 /* APIKeyManager.swift in Sources */,
 				226D81B22C628F7800B2026B /* AppDelegate.swift in Sources */,
 				224542E62C673A11000B5BF6 /* SpotifyAccessTokenModel.swift in Sources */,
 				226D81B42C628F7800B2026B /* SceneDelegate.swift in Sources */,
@@ -238,6 +250,7 @@
 /* Begin XCBuildConfiguration section */
 		226D81C02C628F7A00B2026B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 229A1A7C2C6F825E0039F740 /* Config.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
@@ -301,6 +314,7 @@
 		};
 		226D81C12C628F7A00B2026B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 229A1A7C2C6F825E0039F740 /* Config.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
@@ -357,6 +371,7 @@
 		};
 		226D81C32C628F7A00B2026B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 229A1A7C2C6F825E0039F740 /* Config.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -385,6 +400,7 @@
 		};
 		226D81C42C628F7A00B2026B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 229A1A7C2C6F825E0039F740 /* Config.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -421,7 +437,7 @@
 				226D81C12C628F7A00B2026B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Debug;
 		};
 		226D81C22C628F7A00B2026B /* Build configuration list for PBXNativeTarget "SongWolf" */ = {
 			isa = XCConfigurationList;
@@ -430,7 +446,7 @@
 				226D81C42C628F7A00B2026B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Debug;
 		};
 /* End XCConfigurationList section */
 
