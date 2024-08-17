@@ -11,10 +11,23 @@ import Alamofire
 final class SpotifyAPI {
     // シングルトン
     static let shared = SpotifyAPI()
-    private init() {}
+    let clientID: String
+    let clientSecret: String
     
-    let clientID = "362692b4f0a84a2a9afe1b1b48722abf"
-    let clientSecret = "2e44343b381a4704bf9b8ce6150ed9d3"
+    private init() {
+        guard let clientID = APIKeyManager.shared.apiKey(for: "SPOTIFY_API_ID") else {
+            fatalError("SPOTIFY_API_ID Key not found")
+        }
+        
+        guard let clientSecret = APIKeyManager.shared.apiKey(for: "SPOTIFY_API_SECRET") else {
+            fatalError("SPOTIFY_API_SECRET Key not found")
+        }
+        print(clientID)
+        print(clientSecret)
+        self.clientID = clientID
+        self.clientSecret = clientSecret
+    }
+    
     
     let baseOAuthURL = "https://accounts.spotify.com/authorize"
     let baseAPIURL = "https://api.spotify.com/v1"
